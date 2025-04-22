@@ -43,8 +43,8 @@
     --sidebar-border: 223 20% 26%;
     --sidebar-ring: 258 79% 74%;
 
-    --primary-color: 325 78% 56%; // Magenta
-    --secondary-color: 330 100% 80%; // Lighter Magenta
+    --primary-color: 325 78% 56%;
+    --secondary-color: 330 100% 80%;
   }
 
   .dark {
