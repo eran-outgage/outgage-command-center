@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { 
@@ -58,25 +59,20 @@ const Sidebar = () => {
   return (
     <aside
       className={cn(
-        "h-screen bg-[#D946EF] transition-all duration-300 border-r border-[#D946EF] flex flex-col",
+        "h-screen bg-sidebar transition-all duration-300 border-r border-sidebar-border flex flex-col",
         collapsed ? "w-16" : "w-64"
       )}
     >
       <div className="flex items-center justify-between p-4">
         {!collapsed && (
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/7b9ff8e0-fd3d-4cc8-b1b1-16439f04d5de.png" 
-              alt="Outgage Logo" 
-              className="h-8 mr-2" 
-            />
-            <span className="text-white font-bold text-xl">Outgage</span>
+            <span className="text-sidebar-foreground font-bold text-xl">Outgage</span>
           </div>
         )}
         <Button 
           variant="ghost" 
           size="icon"
-          className="text-white hover:bg-[#D946EF]/80"
+          className="text-sidebar-foreground hover:bg-sidebar-accent"
           onClick={() => setCollapsed(!collapsed)}
         >
           {collapsed ? (
@@ -115,12 +111,12 @@ const Sidebar = () => {
           "flex items-center gap-3",
           collapsed ? "justify-center" : ""
         )}>
-          <div className="h-8 w-8 rounded-full bg-outgage-purple flex items-center justify-center text-white font-medium">
+          <div className="h-8 w-8 rounded-full bg-sidebar-primary flex items-center justify-center text-white font-medium">
             OU
           </div>
           {!collapsed && (
             <div>
-              <p className="text-sm text-white font-medium">Outgage Inc.</p>
+              <p className="text-sm text-sidebar-foreground font-medium">Outgage Inc.</p>
               <p className="text-xs text-gray-400">Enterprise Plan</p>
             </div>
           )}

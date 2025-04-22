@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,9 +43,6 @@
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 223 20% 26%;
     --sidebar-ring: 258 79% 74%;
-
-    --primary-color: 325 78% 56%;
-    --secondary-color: 330 100% 80%;
   }
 
   .dark {
@@ -94,7 +92,7 @@
 
 .metric-card::before {
   content: '';
-  @apply absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-outgage-purple to-outgage-purple-dark;
+  @apply absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#D946EF] to-[#C026D3];
 }
 
 .chart-container {
