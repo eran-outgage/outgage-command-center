@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,6 +42,9 @@
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 223 20% 26%;
     --sidebar-ring: 258 79% 74%;
+
+    --primary-color: 325 78% 56%; // Magenta
+    --secondary-color: 330 100% 80%; // Lighter Magenta
   }
 
   .dark {
@@ -82,7 +84,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-outgage-background text-outgage-text;
   }
 }
 

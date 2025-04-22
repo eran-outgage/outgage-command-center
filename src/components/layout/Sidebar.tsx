@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { 
@@ -59,20 +58,25 @@ const Sidebar = () => {
   return (
     <aside
       className={cn(
-        "h-screen bg-sidebar transition-all duration-300 border-r border-sidebar-border flex flex-col",
+        "h-screen bg-[#D946EF] transition-all duration-300 border-r border-[#D946EF] flex flex-col",
         collapsed ? "w-16" : "w-64"
       )}
     >
       <div className="flex items-center justify-between p-4">
         {!collapsed && (
-          <div className="text-white font-bold text-xl">
-            <span className="text-outgage-purple">Out</span>gage
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/7b9ff8e0-fd3d-4cc8-b1b1-16439f04d5de.png" 
+              alt="Outgage Logo" 
+              className="h-8 mr-2" 
+            />
+            <span className="text-white font-bold text-xl">Outgage</span>
           </div>
         )}
         <Button 
           variant="ghost" 
           size="icon"
-          className="text-white hover:bg-sidebar-accent"
+          className="text-white hover:bg-[#D946EF]/80"
           onClick={() => setCollapsed(!collapsed)}
         >
           {collapsed ? (
