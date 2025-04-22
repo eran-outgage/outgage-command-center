@@ -1,6 +1,7 @@
 
 import { BarChart3, Mail, Users, Target } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button"; // Import the Button component
 import MetricsGrid from "@/components/dashboard/MetricsGrid";
 import EngagementChart from "@/components/dashboard/EngagementChart";
 import CampaignPerformance from "@/components/dashboard/CampaignPerformance";
