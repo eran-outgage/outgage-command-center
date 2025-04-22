@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -66,7 +67,9 @@ export default {
 					primary: '#D946EF',
 					secondary: '#FF6BCD',
 					background: '#FFF0F5',
-					text: '#333333'
+					text: '#333333',
+					purple: '#D946EF',        // Adding the purple color
+					'purple-dark': '#C026D3'  // Adding a darker variant
 				}
 			},
 			borderRadius: {
